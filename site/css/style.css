@@ -86,7 +86,12 @@ ul { list-style: none; }
   position: absolute; inset: 0;
   width: 100%; height: 100%;
 }
-.hero-bg svg { width: 100%; height: 100%; object-fit: cover; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.1) 50%, rgba(13,13,13,0.88) 100%);
+}
 
 .hero-content {
   position: relative; z-index: 2;
