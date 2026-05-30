@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Велосипедные маршруты — лучшие трейлы и веломаршруты Подмосковья и России">
+  <title>Маршруты — BikeNotes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">BIKE<span>NOTES</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="reviews.html">Обзоры</a></li>
+        <li><a href="routes.html" class="active">Маршруты</a></li>
+        <li><a href="tips.html">Советы</a></li>
+      </ul>
+      <button class="burger" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>МАРШРУТЫ</h1>
+      <p>Лучшие велосипедные маршруты России: от городских прогулок до многодневных походов и горных трейлов.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+
+    <!-- Difficulty legend -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px;align-items:center;">
+      <span style="font-size:13px;color:var(--text-muted);font-weight:600;">Сложность:</span>
+      <span class="route-difficulty difficulty-easy">● Лёгкий</span>
+      <span class="route-difficulty difficulty-medium">● Средний</span>
+      <span class="route-difficulty difficulty-hard">● Сложный</span>
+    </div>
+
+    <div class="routes-grid">
+
+      <!-- Route 1 -->
+      <article class="route-card">
+        <div class="route-img">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="560" height="220" fill="#0a1a08"/>
+            <!-- Park landscape -->
+            <rect x="0" y="160" width="560" height="60" fill="#0f1a0a"/>
+            <circle cx="80" cy="140" r="50" fill="#1a3a0f"/>
+            <circle cx="120" cy="130" r="40" fill="#1e4a12"/>
+            <circle cx="460" cy="145" r="45" fill="#1a3a0f"/>
+            <circle cx="500" cy="135" r="38" fill="#1e4a12"/>
+            <!-- Path -->
+            <path d="M30,200 Q150,155 280,160 Q420,165 530,185" fill="none" stroke="#8B7355" stroke-width="12" stroke-linecap="round"/>
+            <path d="M30,200 Q150,155 280,160 Q420,165 530,185" fill="none" stroke="#A0896A" stroke-width="6" stroke-linecap="round" stroke-dasharray="20,15"/>
+            <!-- Biker -->
+            <circle cx="200" cy="152" r="8" fill="#e8ff00"/>
+            <circle cx="180" cy="158" r="12" fill="none" stroke="#e8ff00" stroke-width="3"/>
+            <circle cx="205" cy="158" r="12" fill="none" stroke="#e8ff00" stroke-width="3"/>
+            <line x1="180" y1="158" x2="193" y2="148" stroke="#e8ff00" stroke-width="3" stroke-linecap="round"/>
+            <line x1="193" y1="148" x2="205" y2="158" stroke="#e8ff00" stroke-width="3" stroke-linecap="round"/>
+            <!-- Park label -->
+            <text x="240" y="40" fill="#6dc86d" font-size="16" font-family="sans-serif" font-weight="bold" opacity="0.8" text-anchor="middle">ЛОСИНЫЙ ОСТРОВ</text>
+            <text x="240" y="60" fill="#6dc86d" font-size="11" font-family="sans-serif" opacity="0.5" text-anchor="middle">национальный парк</text>
+          </svg>
+        </div>
+        <div class="route-body">
+          <h3><a href="#">Лосиный Остров — кольцо по парку (35 км)</a></h3>
+          <p>Живописный кольцевой маршрут по национальному парку. Почти без машин, отличное покрытие, можно встретить лосей.</p>
+          <div class="route-stats">
+            <div class="route-stat">
+              <span class="route-stat-label">Дистанция</span>
+              <span class="route-stat-val">35 км</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Набор высоты</span>
+              <span class="route-stat-val">180 м</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Время</span>
+              <span class="route-stat-val">2.5 ч</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+            <span class="route-difficulty difficulty-easy">Лёгкий</span>
+            <span style="font-size:12px;color:var(--text-muted);">Шоссе / МТБ / Гравий</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Route 2 -->
+      <article class="route-card">
+        <div class="route-img">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="560" height="220" fill="#0f0a18"/>
+            <!-- City at dawn -->
+            <rect x="0" y="140" width="560" height="80" fill="#1a1020"/>
+            <!-- Buildings -->
+            <rect x="20" y="80" width="45" height="140" fill="#1e1530"/>
+            <rect x="28" y="70" width="30" height="15" fill="#251a3a"/>
+            <rect x="80" y="100" width="60" height="120" fill="#1a1030"/>
+            <rect x="160" y="60" width="50" height="160" fill="#251a3a"/>
+            <rect x="170" y="48" width="30" height="18" fill="#2a1f40"/>
+            <rect x="420" y="70" width="55" height="150" fill="#1e1530"/>
+            <rect x="430" y="58" width="35" height="18" fill="#251a3a"/>
+            <rect x="490" y="95" width="50" height="125" fill="#1a1030"/>
+            <!-- Kremlin-style tower -->
+            <rect x="255" y="90" width="50" height="130" fill="#201540"/>
+            <polygon points="255,90 280,55 305,90" fill="#201540"/>
+            <rect x="265" y="65" width="30" height="8" fill="#2a1f50"/>
+            <!-- Windows (lights) -->
+            <rect x="28" y="90" width="8" height="6" fill="#ffe082" rx="1" opacity="0.7"/>
+            <rect x="42" y="90" width="8" height="6" fill="#ffe082" rx="1" opacity="0.4"/>
+            <rect x="28" y="105" width="8" height="6" fill="#ffe082" rx="1" opacity="0.6"/>
+            <rect x="88" y="112" width="8" height="6" fill="#ffe082" rx="1" opacity="0.5"/>
+            <rect x="103" y="112" width="8" height="6" fill="#ffe082" rx="1" opacity="0.7"/>
+            <rect x="430" y="80" width="8" height="6" fill="#ffe082" rx="1" opacity="0.6"/>
+            <rect x="444" y="80" width="8" height="6" fill="#ffe082" rx="1" opacity="0.4"/>
+            <!-- Road -->
+            <rect x="0" y="170" width="560" height="50" fill="#111"/>
+            <rect x="265" y="170" width="30" height="50" fill="#e8ff00" opacity="0.15"/>
+            <!-- Bike -->
+            <circle cx="310" cy="175" r="18" fill="none" stroke="#e8ff00" stroke-width="3"/>
+            <circle cx="355" cy="175" r="18" fill="none" stroke="#e8ff00" stroke-width="3"/>
+            <line x1="310" y1="175" x2="333" y2="162" stroke="#e8ff00" stroke-width="4" stroke-linecap="round"/>
+            <line x1="333" y1="162" x2="355" y2="175" stroke="#e8ff00" stroke-width="4" stroke-linecap="round"/>
+            <line x1="310" y1="175" x2="333" y2="175" stroke="#e8ff00" stroke-width="4" stroke-linecap="round"/>
+            <line x1="333" y1="175" x2="355" y2="175" stroke="#e8ff00" stroke-width="4" stroke-linecap="round"/>
+            <line x1="333" y1="154" x2="333" y2="175" stroke="#e8ff00" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="route-body">
+          <h3><a href="#">Москва ночная: Садовое кольцо — набережные (28 км)</a></h3>
+          <p>Ночная велопрогулка по пустым улицам Москвы. Садовое, Москва-река, Воробьёвы горы. Старт в полночь — финиш на рассвете.</p>
+          <div class="route-stats">
+            <div class="route-stat">
+              <span class="route-stat-label">Дистанция</span>
+              <span class="route-stat-val">28 км</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Набор высоты</span>
+              <span class="route-stat-val">120 м</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Время</span>
+              <span class="route-stat-val">2 ч</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+            <span class="route-difficulty difficulty-easy">Лёгкий</span>
+            <span style="font-size:12px;color:var(--text-muted);">Любой велосипед</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Route 3 -->
+      <article class="route-card">
+        <div class="route-img">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="560" height="220" fill="#0d1a0a"/>
+            <!-- Rolling hills landscape -->
+            <ellipse cx="100" cy="180" rx="140" ry="60" fill="#1a3a0f"/>
+            <ellipse cx="280" cy="170" rx="180" ry="70" fill="#1e4a12"/>
+            <ellipse cx="460" cy="175" rx="150" ry="65" fill="#1a3a0f"/>
+            <!-- Sky gradient -->
+            <rect width="560" height="120" fill="url(#hillSky)"/>
+            <!-- Road -->
+            <path d="M0,190 Q140,150 280,165 Q400,175 560,155" fill="none" stroke="#8B7355" stroke-width="10"/>
+            <!-- Distance markers -->
+            <line x1="0" y1="185" x2="560" y2="175" stroke="#8B7355" stroke-width="4" opacity="0.4"/>
+            <!-- Km markers -->
+            <circle cx="140" cy="180" r="5" fill="#e8ff00"/>
+            <text x="140" y="170" fill="#e8ff00" font-size="10" text-anchor="middle" font-family="sans-serif">20км</text>
+            <circle cx="280" cy="173" r="5" fill="#e8ff00"/>
+            <text x="280" y="163" fill="#e8ff00" font-size="10" text-anchor="middle" font-family="sans-serif">40км</text>
+            <circle cx="420" cy="168" r="5" fill="#e8ff00"/>
+            <text x="420" y="158" fill="#e8ff00" font-size="10" text-anchor="middle" font-family="sans-serif">60км</text>
+            <!-- Church at finish -->
+            <rect x="500" y="100" width="30" height="70" fill="#2a4a20"/>
+            <polygon points="500,100 515,75 530,100" fill="#2a4a20"/>
+            <circle cx="515" cy="73" r="5" fill="#e8ff00" opacity="0.8"/>
+            <defs>
+              <linearGradient id="hillSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0a1505"/>
+                <stop offset="100%" stop-color="#1a3010" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="route-body">
+          <h3><a href="#">Москва — Сергиев Посад (80 км)</a></h3>
+          <p>Классический однодневный велопоход по живописным подмосковным дорогам. Финиш у Троице-Сергиевой лавры.</p>
+          <div class="route-stats">
+            <div class="route-stat">
+              <span class="route-stat-label">Дистанция</span>
+              <span class="route-stat-val">80 км</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Набор высоты</span>
+              <span class="route-stat-val">420 м</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Время</span>
+              <span class="route-stat-val">4–5 ч</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+            <span class="route-difficulty difficulty-medium">Средний</span>
+            <span style="font-size:12px;color:var(--text-muted);">Шоссе / Гравий</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Route 4 -->
+      <article class="route-card">
+        <div class="route-img">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="560" height="220" fill="#0a0f1a"/>
+            <!-- Lake / river -->
+            <ellipse cx="280" cy="180" rx="250" ry="55" fill="#0d2a3a"/>
+            <ellipse cx="280" cy="180" rx="200" ry="40" fill="#102f42"/>
+            <!-- Shoreline trees -->
+            <circle cx="50" cy="130" r="35" fill="#0f2a0f"/>
+            <circle cx="90" cy="120" r="30" fill="#122e12"/>
+            <circle cx="480" cy="125" r="38" fill="#0f2a0f"/>
+            <circle cx="520" cy="130" r="30" fill="#122e12"/>
+            <!-- Water reflection -->
+            <line x1="100" y1="185" x2="460" y2="185" stroke="#1a4a5a" stroke-width="2" opacity="0.5"/>
+            <line x1="80" y1="192" x2="480" y2="190" stroke="#1a4a5a" stroke-width="1.5" opacity="0.3"/>
+            <!-- Gravel path along shore -->
+            <path d="M0,155 Q140,140 280,145 Q420,150 560,138" fill="none" stroke="#6B5B45" stroke-width="10"/>
+            <!-- Trail markers -->
+            <circle cx="100" cy="149" r="6" fill="#ff6b35"/>
+            <circle cx="280" cy="149" r="6" fill="#ff6b35"/>
+            <circle cx="450" cy="143" r="6" fill="#ff6b35"/>
+            <!-- Biker on trail -->
+            <circle cx="350" cy="140" r="7" fill="#e8ff00"/>
+            <circle cx="335" cy="146" r="10" fill="none" stroke="#e8ff00" stroke-width="2.5"/>
+            <circle cx="356" cy="146" r="10" fill="none" stroke="#e8ff00" stroke-width="2.5"/>
+            <line x1="335" y1="146" x2="346" y2="136" stroke="#e8ff00" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="346" y1="136" x2="356" y2="146" stroke="#e8ff00" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Moon -->
+            <circle cx="450" cy="40" r="25" fill="#1a2a3a"/>
+            <circle cx="460" cy="35" r="22" fill="#0a0f1a"/>
+          </svg>
+        </div>
+        <div class="route-body">
+          <h3><a href="#">Клязьминское водохранилище — кольцо (52 км)</a></h3>
+          <p>Кольцо вокруг Клязьминского и Пяловского водохранилищ. Грунтовые дороги, сосновые леса, виды на воду.</p>
+          <div class="route-stats">
+            <div class="route-stat">
+              <span class="route-stat-label">Дистанция</span>
+              <span class="route-stat-val">52 км</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Набор высоты</span>
+              <span class="route-stat-val">280 м</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Время</span>
+              <span class="route-stat-val">3–4 ч</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+            <span class="route-difficulty difficulty-medium">Средний</span>
+            <span style="font-size:12px;color:var(--text-muted);">МТБ / Гравий</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Route 5 -->
+      <article class="route-card">
+        <div class="route-img">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="560" height="220" fill="#0a0d18"/>
+            <!-- Mountain range -->
+            <polygon points="0,220 80,60 160,220" fill="#1a2040"/>
+            <polygon points="60,220 160,40 260,220" fill="#1e2548"/>
+            <polygon points="140,220 240,20 340,220" fill="#1a2040"/>
+            <polygon points="220,220 320,55 420,220" fill="#202850"/>
+            <polygon points="330,220 430,70 530,220" fill="#1a2040"/>
+            <!-- Snow caps -->
+            <polygon points="160,40 145,90 175,90" fill="#c8d8f0" opacity="0.7"/>
+            <polygon points="240,20 222,80 258,80" fill="#c8d8f0" opacity="0.7"/>
+            <polygon points="320,55 304,110 336,110" fill="#c8d8f0" opacity="0.7"/>
+            <polygon points="430,70 414,120 446,120" fill="#c8d8f0" opacity="0.7"/>
+            <!-- Trail switchbacks -->
+            <path d="M50,210 Q120,170 190,175 Q250,180 280,155 Q320,130 360,140 Q400,148 440,120 Q470,100 500,110" fill="none" stroke="#e8ff00" stroke-width="4" stroke-dasharray="8,6" opacity="0.8"/>
+            <!-- Rider at peak -->
+            <circle cx="500" cy="107" r="7" fill="#e8ff00"/>
+            <circle cx="488" cy="113" r="10" fill="none" stroke="#e8ff00" stroke-width="2"/>
+            <circle cx="510" cy="113" r="10" fill="none" stroke="#e8ff00" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="route-body">
+          <h3><a href="#">Трейлы Красной Поляны: Горная карусель (25 км)</a></h3>
+          <p>Технический МТБ-маршрут в горах Сочи с набором 1200 м. Для опытных райдеров. Возможен подъём на подъёмнике.</p>
+          <div class="route-stats">
+            <div class="route-stat">
+              <span class="route-stat-label">Дистанция</span>
+              <span class="route-stat-val">25 км</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Набор высоты</span>
+              <span class="route-stat-val">1200 м</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Время</span>
+              <span class="route-stat-val">3–4 ч</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+            <span class="route-difficulty difficulty-hard">Сложный</span>
+            <span style="font-size:12px;color:var(--text-muted);">МТБ (full-sus рекомендован)</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Route 6 -->
+      <article class="route-card">
+        <div class="route-img">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="560" height="220" fill="#100a08"/>
+            <!-- Autumn forest -->
+            <rect x="0" y="150" width="560" height="70" fill="#1a0f08"/>
+            <circle cx="60" cy="130" r="48" fill="#3a2205"/>
+            <circle cx="100" cy="120" r="38" fill="#4a2a08"/>
+            <circle cx="150" cy="135" r="42" fill="#3a2008" opacity="0.9"/>
+            <circle cx="420" cy="128" r="44" fill="#3a2205"/>
+            <circle cx="470" cy="138" r="38" fill="#4a2a08"/>
+            <circle cx="520" cy="125" r="40" fill="#3a2008"/>
+            <!-- Orange/golden leaves -->
+            <circle cx="60" cy="130" r="35" fill="#8B4513" opacity="0.5"/>
+            <circle cx="100" cy="120" r="28" fill="#D2691E" opacity="0.4"/>
+            <circle cx="420" cy="128" r="32" fill="#8B4513" opacity="0.5"/>
+            <circle cx="470" cy="138" r="28" fill="#CD853F" opacity="0.4"/>
+            <circle cx="520" cy="125" r="30" fill="#D2691E" opacity="0.4"/>
+            <!-- Gravel path -->
+            <path d="M0,175 Q140,158 280,162 Q420,166 560,155" fill="none" stroke="#9B7B5A" stroke-width="14"/>
+            <path d="M0,175 Q140,158 280,162 Q420,166 560,155" fill="none" stroke="#B8956A" stroke-width="6" opacity="0.5"/>
+            <!-- Fallen leaves on path -->
+            <ellipse cx="120" cy="170" rx="8" ry="4" fill="#D2691E" opacity="0.7" transform="rotate(-20 120 170)"/>
+            <ellipse cx="200" cy="165" rx="7" ry="3" fill="#8B4513" opacity="0.6" transform="rotate(15 200 165)"/>
+            <ellipse cx="360" cy="163" rx="9" ry="4" fill="#CD853F" opacity="0.7" transform="rotate(-10 360 163)"/>
+            <!-- Biker -->
+            <circle cx="290" cy="155" r="7" fill="#e8ff00"/>
+            <circle cx="275" cy="161" r="10" fill="none" stroke="#e8ff00" stroke-width="2.5"/>
+            <circle cx="300" cy="161" r="10" fill="none" stroke="#e8ff00" stroke-width="2.5"/>
+            <line x1="275" y1="161" x2="287" y2="151" stroke="#e8ff00" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="287" y1="151" x2="300" y2="161" stroke="#e8ff00" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="route-body">
+          <h3><a href="#">Осенний Подмосковный Грavel: Абрамцево — Хотьково (40 км)</a></h3>
+          <p>Грунтовый маршрут через усадьбы и дубравы Сергиево-Посадского района. Идеален для гравийника в сентябре–октябре.</p>
+          <div class="route-stats">
+            <div class="route-stat">
+              <span class="route-stat-label">Дистанция</span>
+              <span class="route-stat-val">40 км</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Набор высоты</span>
+              <span class="route-stat-val">310 м</span>
+            </div>
+            <div class="route-stat">
+              <span class="route-stat-label">Время</span>
+              <span class="route-stat-val">2.5–3 ч</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+            <span class="route-difficulty difficulty-medium">Средний</span>
+            <span style="font-size:12px;color:var(--text-muted);">Гравий / МТБ</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- YouTube videos about routes -->
+    <div style="margin-top:60px;">
+      <div class="section-header">
+        <h2>Видео с маршрутов</h2>
+        <a href="https://www.youtube.com/results?search_query=велосипедный+маршрут+Подмосковье" target="_blank" class="see-all">Смотреть на YouTube →</a>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="video-thumb">
+            <svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <rect width="480" height="240" fill="#0a1f0a"/>
+              <ellipse cx="80" cy="180" rx="100" ry="40" fill="#0f2a0f"/>
+              <ellipse cx="240" cy="175" rx="160" ry="50" fill="#122e12"/>
+              <ellipse cx="420" cy="178" rx="100" ry="42" fill="#0f2a0f"/>
+              <path d="M0,190 Q240,158 480,172" fill="none" stroke="#7a6040" stroke-width="10"/>
+              <rect width="480" height="240" fill="rgba(0,0,0,0.4)"/>
+              <circle cx="240" cy="120" r="38" fill="rgba(255,0,0,0.85)"/>
+              <polygon points="229,104 229,136 260,120" fill="white"/>
+            </svg>
+            <div class="video-duration">28:44</div>
+          </a>
+          <div class="video-info">
+            <h4>Лосиный Остров: полный обзор маршрута на велосипеде</h4>
+            <span>Едем по лесным дорожкам главного парка Москвы</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <a href="https://www.youtube.com/watch?v=8UVNT4wvIGY" target="_blank" class="video-thumb">
+            <svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <rect width="480" height="240" fill="#080d18"/>
+              <polygon points="0,240 90,80 180,240" fill="#1a2040"/>
+              <polygon points="80,240 180,50 280,240" fill="#202850"/>
+              <polygon points="200,240 300,70 400,240" fill="#1a2040"/>
+              <polygon points="330,240 430,90 530,240" fill="#202850"/>
+              <polygon points="180,50 165,100 195,100" fill="#c8d8f0" opacity="0.6"/>
+              <polygon points="300,70 284,122 316,122" fill="#c8d8f0" opacity="0.6"/>
+              <rect width="480" height="240" fill="rgba(0,0,0,0.4)"/>
+              <circle cx="240" cy="120" r="38" fill="rgba(255,0,0,0.85)"/>
+              <polygon points="229,104 229,136 260,120" fill="white"/>
+            </svg>
+            <div class="video-duration">45:20</div>
+          </a>
+          <div class="video-info">
+            <h4>Красная Поляна на МТБ: спуск с горы 2000 м</h4>
+            <span>Экстремальный горный трейл в Сочи — от вершины до моря</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <a href="https://www.youtube.com/watch?v=hT_nvWreIhg" target="_blank" class="video-thumb">
+            <svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <rect width="480" height="240" fill="#0d100a"/>
+              <rect x="0" y="170" width="480" height="70" fill="#0a0d08"/>
+              <ellipse cx="80" cy="170" rx="90" ry="35" fill="#1a3010"/>
+              <ellipse cx="250" cy="165" rx="140" ry="45" fill="#1e3812"/>
+              <ellipse cx="430" cy="168" rx="90" ry="38" fill="#1a3010"/>
+              <path d="M0,180 Q240,155 480,165" fill="none" stroke="#8B7355" stroke-width="10"/>
+              <line x1="0" y1="178" x2="480" y2="162" stroke="#A09060" stroke-width="3" stroke-dasharray="15,12" opacity="0.5"/>
+              <rect width="480" height="240" fill="rgba(0,0,0,0.38)"/>
+              <circle cx="240" cy="120" r="38" fill="rgba(255,0,0,0.85)"/>
+              <polygon points="229,104 229,136 260,120" fill="white"/>
+            </svg>
+            <div class="video-duration">1:02:15</div>
+          </a>
+          <div class="video-info">
+            <h4>Москва — Сергиев Посад на велосипеде: полный стрим</h4>
+            <span>80 км за один день — маршрут, питание, впечатления</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">BIKE<span>NOTES</span></a>
+        <p>Независимый журнал о велосипедах и велоспорте. Пишем честно — катаем сами.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Разделы</h5>
+        <ul>
+          <li><a href="reviews.html">Обзоры</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="tips.html">Советы</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>О сайте</h5>
+        <ul>
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 BikeNotes.ru — Всё о велосипедах</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

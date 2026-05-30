@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Обзоры велосипедов — честные тесты горных, шоссейных и городских велосипедов">
+  <title>Обзоры велосипедов — BikeNotes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">BIKE<span>NOTES</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="reviews.html" class="active">Обзоры</a></li>
+        <li><a href="routes.html">Маршруты</a></li>
+        <li><a href="tips.html">Советы</a></li>
+      </ul>
+      <button class="burger" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>ОБЗОРЫ</h1>
+      <p>Честные тесты горных, шоссейных, гравийных и городских велосипедов. Катаем сами — пишем честно.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+
+    <!-- Filter tags -->
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;">
+      <span style="background:var(--accent);color:#000;font-size:12px;font-weight:700;padding:6px 16px;border-radius:20px;cursor:pointer;">Все</span>
+      <span style="border:1px solid var(--border);color:var(--text-muted);font-size:12px;font-weight:600;padding:6px 16px;border-radius:20px;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">Горные МТБ</span>
+      <span style="border:1px solid var(--border);color:var(--text-muted);font-size:12px;font-weight:600;padding:6px 16px;border-radius:20px;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">Шоссейные</span>
+      <span style="border:1px solid var(--border);color:var(--text-muted);font-size:12px;font-weight:600;padding:6px 16px;border-radius:20px;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">Гравийные</span>
+      <span style="border:1px solid var(--border);color:var(--text-muted);font-size:12px;font-weight:600;padding:6px 16px;border-radius:20px;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">Городские</span>
+    </div>
+
+    <div class="articles-list">
+
+      <!-- Review 1 -->
+      <article class="card">
+        <div class="card-img" style="height:200px;">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="400" height="220" fill="#0f1a0f"/>
+            <circle cx="110" cy="145" r="65" fill="none" stroke="#4CAF50" stroke-width="6"/>
+            <circle cx="110" cy="145" r="45" fill="none" stroke="#4CAF50" stroke-width="2" opacity="0.3"/>
+            <circle cx="290" cy="145" r="65" fill="none" stroke="#4CAF50" stroke-width="6"/>
+            <circle cx="290" cy="145" r="45" fill="none" stroke="#4CAF50" stroke-width="2" opacity="0.3"/>
+            <!-- MTB frame -->
+            <line x1="110" y1="145" x2="195" y2="100" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+            <line x1="195" y1="100" x2="290" y2="145" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+            <line x1="110" y1="145" x2="200" y2="145" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+            <line x1="200" y1="145" x2="195" y2="100" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+            <line x1="200" y1="145" x2="290" y2="145" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+            <line x1="200" y1="80" x2="200" y2="145" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+            <!-- Suspension fork -->
+            <line x1="290" y1="145" x2="305" y2="80" stroke="#4CAF50" stroke-width="6" stroke-linecap="round"/>
+            <line x1="305" y1="80" x2="320" y2="145" stroke="#4CAF50" stroke-width="6" stroke-linecap="round"/>
+            <!-- Handlebar -->
+            <line x1="285" y1="68" x2="325" y2="68" stroke="#4CAF50" stroke-width="6" stroke-linecap="round"/>
+            <line x1="305" y1="68" x2="305" y2="82" stroke="#4CAF50" stroke-width="6" stroke-linecap="round"/>
+            <!-- CUBE text -->
+            <text x="140" y="185" fill="#4CAF50" font-size="14" font-family="monospace" opacity="0.6">CUBE AIM RACE</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">МТБ</span>
+          <h3>CUBE Aim Race 2025</h3>
+          <p>Один из самых популярных горных велосипедов начального уровня. Разбираем компоненты, проверяем в деле на трейлах Подмосковья.</p>
+          <div style="display:flex;gap:4px;margin:12px 0;">
+            <span style="color:#e8ff00;font-size:18px;">★★★★</span><span style="color:#444;font-size:18px;">★</span>
+            <span style="color:var(--text-muted);font-size:13px;margin-left:6px;">4.0 / 5</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted);background:var(--bg3);padding:10px;border-radius:8px;">
+            <span>≈ 45 000 ₽</span><span>21 скорость</span><span>Алюминий</span>
+          </div>
+          <div class="card-meta"><span>10 мая 2025</span><span>7 мин</span></div>
+        </div>
+      </article>
+
+      <!-- Review 2 -->
+      <article class="card">
+        <div class="card-img" style="height:200px;">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="400" height="220" fill="#1a0f0f"/>
+            <circle cx="100" cy="150" r="62" fill="none" stroke="#ff4444" stroke-width="5"/>
+            <circle cx="295" cy="150" r="62" fill="none" stroke="#ff4444" stroke-width="5"/>
+            <!-- Road bike - aggressive geometry -->
+            <line x1="100" y1="150" x2="200" y2="105" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+            <line x1="200" y1="105" x2="295" y2="150" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+            <line x1="100" y1="150" x2="195" y2="150" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+            <line x1="195" y1="150" x2="200" y2="105" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+            <line x1="195" y1="150" x2="295" y2="150" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+            <line x1="195" y1="82" x2="195" y2="150" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+            <!-- Drop bar -->
+            <path d="M275,90 Q290,85 295,100 Q298,115 288,118" fill="none" stroke="#ff4444" stroke-width="5"/>
+            <line x1="255" y1="78" x2="295" y2="78" stroke="#ff4444" stroke-width="5" stroke-linecap="round"/>
+            <line x1="275" y1="78" x2="275" y2="92" stroke="#ff4444" stroke-width="5" stroke-linecap="round"/>
+            <text x="100" y="195" fill="#ff4444" font-size="12" font-family="monospace" opacity="0.6">TREK DOMANE AL 4</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Шоссе</span>
+          <h3>Trek Domane AL 4 2025</h3>
+          <p>Шоссейный велосипед с эндурансовой геометрией для долгих поездок. Протестировали 600 км за месяц — делимся впечатлениями.</p>
+          <div style="display:flex;gap:4px;margin:12px 0;">
+            <span style="color:#e8ff00;font-size:18px;">★★★★★</span>
+            <span style="color:var(--text-muted);font-size:13px;margin-left:6px;">5.0 / 5</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted);background:var(--bg3);padding:10px;border-radius:8px;">
+            <span>≈ 80 000 ₽</span><span>Shimano 105</span><span>Алюминий</span>
+          </div>
+          <div class="card-meta"><span>28 апр 2025</span><span>10 мин</span></div>
+        </div>
+      </article>
+
+      <!-- Review 3 -->
+      <article class="card">
+        <div class="card-img" style="height:200px;">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="400" height="220" fill="#0f0f1a"/>
+            <circle cx="105" cy="148" r="63" fill="none" stroke="#7c5cbf" stroke-width="5"/>
+            <circle cx="295" cy="148" r="63" fill="none" stroke="#7c5cbf" stroke-width="5"/>
+            <!-- Gravel bike frame -->
+            <line x1="105" y1="148" x2="200" y2="100" stroke="#7c5cbf" stroke-width="7" stroke-linecap="round"/>
+            <line x1="200" y1="100" x2="295" y2="148" stroke="#7c5cbf" stroke-width="7" stroke-linecap="round"/>
+            <line x1="105" y1="148" x2="198" y2="148" stroke="#7c5cbf" stroke-width="7" stroke-linecap="round"/>
+            <line x1="198" y1="148" x2="200" y2="100" stroke="#7c5cbf" stroke-width="7" stroke-linecap="round"/>
+            <line x1="198" y1="148" x2="295" y2="148" stroke="#7c5cbf" stroke-width="7" stroke-linecap="round"/>
+            <line x1="198" y1="78" x2="198" y2="148" stroke="#7c5cbf" stroke-width="7" stroke-linecap="round"/>
+            <!-- Gravel flared drops -->
+            <path d="M275,86 Q295,80 300,98 Q304,116 292,120" fill="none" stroke="#7c5cbf" stroke-width="5"/>
+            <line x1="255" y1="74" x2="300" y2="74" stroke="#7c5cbf" stroke-width="5" stroke-linecap="round"/>
+            <line x1="278" y1="74" x2="278" y2="88" stroke="#7c5cbf" stroke-width="5" stroke-linecap="round"/>
+            <!-- Rear rack suggestion -->
+            <line x1="165" y1="100" x2="180" y2="148" stroke="#7c5cbf" stroke-width="4" stroke-linecap="round" stroke-dasharray="4,3"/>
+            <text x="90" y="196" fill="#7c5cbf" font-size="12" font-family="monospace" opacity="0.6">SPECIALIZED DIVERGE BASE</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Гравий</span>
+          <h3>Specialized Diverge Base 2025</h3>
+          <p>Гравийник для тех, кто хочет ехать и по асфальту, и по грунтовкам. Универсальный боец за разумные деньги.</p>
+          <div style="display:flex;gap:4px;margin:12px 0;">
+            <span style="color:#e8ff00;font-size:18px;">★★★★</span><span style="color:#444;font-size:18px;">★</span>
+            <span style="color:var(--text-muted);font-size:13px;margin-left:6px;">4.2 / 5</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted);background:var(--bg3);padding:10px;border-radius:8px;">
+            <span>≈ 95 000 ₽</span><span>SRAM Apex</span><span>Алюминий</span>
+          </div>
+          <div class="card-meta"><span>20 апр 2025</span><span>9 мин</span></div>
+        </div>
+      </article>
+
+      <!-- Review 4 -->
+      <article class="card">
+        <div class="card-img" style="height:200px;">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="400" height="220" fill="#1a1500"/>
+            <circle cx="108" cy="148" r="62" fill="none" stroke="#ffcc00" stroke-width="5"/>
+            <circle cx="292" cy="148" r="62" fill="none" stroke="#ffcc00" stroke-width="5"/>
+            <!-- City bike upright geometry -->
+            <line x1="108" y1="148" x2="200" y2="108" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <line x1="200" y1="108" x2="292" y2="148" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <line x1="108" y1="148" x2="198" y2="148" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <line x1="198" y1="148" x2="200" y2="108" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <line x1="198" y1="148" x2="292" y2="148" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <line x1="198" y1="82" x2="198" y2="148" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <!-- Upright handlebar -->
+            <line x1="265" y1="72" x2="315" y2="72" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <line x1="290" y1="72" x2="290" y2="88" stroke="#ffcc00" stroke-width="7" stroke-linecap="round"/>
+            <!-- Fender suggestion -->
+            <path d="M108,86 Q70,148 108,210" fill="none" stroke="#ffcc00" stroke-width="3" stroke-dasharray="5,4" opacity="0.5"/>
+            <!-- Basket -->
+            <rect x="290" y="52" width="50" height="28" fill="none" stroke="#ffcc00" stroke-width="3" rx="3" opacity="0.6"/>
+            <text x="80" y="197" fill="#ffcc00" font-size="12" font-family="monospace" opacity="0.6">ELECTRA AMSTERDAM</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Городской</span>
+          <h3>Electra Amsterdam 3i 2025</h3>
+          <p>Классический городской велосипед с планетарной втулкой. Идеален для ежедневных поездок по городу без лишних хлопот.</p>
+          <div style="display:flex;gap:4px;margin:12px 0;">
+            <span style="color:#e8ff00;font-size:18px;">★★★★</span><span style="color:#444;font-size:18px;">★</span>
+            <span style="color:var(--text-muted);font-size:13px;margin-left:6px;">4.3 / 5</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted);background:var(--bg3);padding:10px;border-radius:8px;">
+            <span>≈ 55 000 ₽</span><span>3 скорости</span><span>Сталь</span>
+          </div>
+          <div class="card-meta"><span>15 апр 2025</span><span>6 мин</span></div>
+        </div>
+      </article>
+
+      <!-- Review 5 -->
+      <article class="card">
+        <div class="card-img" style="height:200px;">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="400" height="220" fill="#0a1a15"/>
+            <circle cx="108" cy="148" r="62" fill="none" stroke="#00bfa5" stroke-width="5"/>
+            <circle cx="292" cy="148" r="62" fill="none" stroke="#00bfa5" stroke-width="5"/>
+            <!-- E-bike frame (thicker tubes = battery) -->
+            <line x1="108" y1="148" x2="200" y2="104" stroke="#00bfa5" stroke-width="10" stroke-linecap="round"/>
+            <line x1="200" y1="104" x2="292" y2="148" stroke="#00bfa5" stroke-width="10" stroke-linecap="round"/>
+            <line x1="108" y1="148" x2="200" y2="148" stroke="#00bfa5" stroke-width="10" stroke-linecap="round"/>
+            <line x1="200" y1="148" x2="200" y2="104" stroke="#00bfa5" stroke-width="10" stroke-linecap="round"/>
+            <line x1="200" y1="148" x2="292" y2="148" stroke="#00bfa5" stroke-width="10" stroke-linecap="round"/>
+            <line x1="200" y1="80" x2="200" y2="148" stroke="#00bfa5" stroke-width="10" stroke-linecap="round"/>
+            <!-- Battery on downtube -->
+            <rect x="140" y="112" width="48" height="18" fill="#00bfa5" rx="4" opacity="0.5"/>
+            <!-- Motor indicator -->
+            <circle cx="200" cy="148" r="14" fill="#00bfa5" opacity="0.4"/>
+            <circle cx="200" cy="148" r="7" fill="#00bfa5"/>
+            <!-- Lightning bolt -->
+            <polygon points="198,138 194,147 199,147 196,158 202,147 197,147 200,138" fill="#000"/>
+            <text x="85" y="198" fill="#00bfa5" font-size="12" font-family="monospace" opacity="0.6">GIANT EXPLORE E+ 3</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Электро</span>
+          <h3>Giant Explore E+ 3 2025</h3>
+          <p>Электровелосипед для туризма и дальних поездок. Мотор Yamaha, запас хода до 130 км — тестируем в реальных условиях.</p>
+          <div style="display:flex;gap:4px;margin:12px 0;">
+            <span style="color:#e8ff00;font-size:18px;">★★★★★</span>
+            <span style="color:var(--text-muted);font-size:13px;margin-left:6px;">4.7 / 5</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted);background:var(--bg3);padding:10px;border-radius:8px;">
+            <span>≈ 180 000 ₽</span><span>250Вт Yamaha</span><span>130 км</span>
+          </div>
+          <div class="card-meta"><span>5 апр 2025</span><span>12 мин</span></div>
+        </div>
+      </article>
+
+      <!-- Review 6 -->
+      <article class="card">
+        <div class="card-img" style="height:200px;">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <rect width="400" height="220" fill="#100a1a"/>
+            <circle cx="108" cy="148" r="62" fill="none" stroke="#e040fb" stroke-width="5"/>
+            <circle cx="292" cy="148" r="62" fill="none" stroke="#e040fb" stroke-width="5"/>
+            <!-- Full suspension MTB -->
+            <line x1="108" y1="148" x2="190" y2="105" stroke="#e040fb" stroke-width="7" stroke-linecap="round"/>
+            <line x1="190" y1="105" x2="260" y2="120" stroke="#e040fb" stroke-width="7" stroke-linecap="round"/>
+            <line x1="260" y1="120" x2="292" y2="148" stroke="#e040fb" stroke-width="7" stroke-linecap="round"/>
+            <line x1="108" y1="148" x2="195" y2="148" stroke="#e040fb" stroke-width="7" stroke-linecap="round"/>
+            <line x1="195" y1="148" x2="190" y2="105" stroke="#e040fb" stroke-width="7" stroke-linecap="round"/>
+            <line x1="195" y1="148" x2="260" y2="120" stroke="#e040fb" stroke-width="6" stroke-linecap="round"/>
+            <line x1="190" y1="80" x2="190" y2="148" stroke="#e040fb" stroke-width="7" stroke-linecap="round"/>
+            <!-- Rear shock -->
+            <line x1="215" y1="118" x2="215" y2="145" stroke="#e040fb" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+            <!-- Suspension fork -->
+            <line x1="292" y1="148" x2="305" y2="86" stroke="#e040fb" stroke-width="6" stroke-linecap="round"/>
+            <line x1="305" y1="86" x2="318" y2="148" stroke="#e040fb" stroke-width="6" stroke-linecap="round"/>
+            <text x="60" y="196" fill="#e040fb" font-size="12" font-family="monospace" opacity="0.6">SCOTT GENIUS 930 FS</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Full-sus МТБ</span>
+          <h3>Scott Genius 930 2025</h3>
+          <p>Двухподвес среднего класса с отличной геометрией для трейлрайдинга. Берём в горы и устраиваем суровый тест.</p>
+          <div style="display:flex;gap:4px;margin:12px 0;">
+            <span style="color:#e8ff00;font-size:18px;">★★★★</span><span style="color:#444;font-size:18px;">★</span>
+            <span style="color:var(--text-muted);font-size:13px;margin-left:6px;">4.4 / 5</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-muted);background:var(--bg3);padding:10px;border-radius:8px;">
+            <span>≈ 160 000 ₽</span><span>Shimano SLX</span><span>Full-sus</span>
+          </div>
+          <div class="card-meta"><span>28 мар 2025</span><span>11 мин</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- YouTube section -->
+    <div style="margin-top:60px;">
+      <div class="section-header">
+        <h2>Видеообзоры</h2>
+        <a href="https://www.youtube.com/results?search_query=велосипед+обзор+2025" target="_blank" class="see-all">Смотреть на YouTube →</a>
+      </div>
+      <div class="video-grid" style="grid-template-columns:repeat(2,1fr);">
+        <div class="video-card">
+          <a href="https://www.youtube.com/watch?v=JHKYFpCv_eI" target="_blank" class="video-thumb">
+            <svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <rect width="480" height="240" fill="#111"/>
+              <circle cx="150" cy="155" r="65" fill="none" stroke="#4CAF50" stroke-width="5"/>
+              <circle cx="320" cy="155" r="65" fill="none" stroke="#4CAF50" stroke-width="5"/>
+              <line x1="150" y1="155" x2="235" y2="110" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+              <line x1="235" y1="110" x2="320" y2="155" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+              <line x1="150" y1="155" x2="232" y2="155" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+              <line x1="232" y1="155" x2="235" y2="110" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+              <line x1="232" y1="155" x2="320" y2="155" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+              <line x1="232" y1="88" x2="232" y2="155" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
+              <rect width="480" height="240" fill="rgba(0,0,0,0.45)"/>
+              <circle cx="240" cy="120" r="38" fill="rgba(255,0,0,0.85)"/>
+              <polygon points="229,104 229,136 260,120" fill="white"/>
+            </svg>
+            <div class="video-duration">22:30</div>
+          </a>
+          <div class="video-info">
+            <h4>МТБ до 50 000 рублей — что выбрать в 2025 году?</h4>
+            <span>Сравнение популярных моделей начального уровня</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <a href="https://www.youtube.com/watch?v=qMQoFsNbOug" target="_blank" class="video-thumb">
+            <svg viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <rect width="480" height="240" fill="#1a0a0a"/>
+              <circle cx="140" cy="155" r="65" fill="none" stroke="#ff4444" stroke-width="5"/>
+              <circle cx="330" cy="155" r="65" fill="none" stroke="#ff4444" stroke-width="5"/>
+              <line x1="140" y1="155" x2="240" y2="108" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+              <line x1="240" y1="108" x2="330" y2="155" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+              <line x1="140" y1="155" x2="237" y2="155" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+              <line x1="237" y1="155" x2="240" y2="108" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+              <line x1="237" y1="155" x2="330" y2="155" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+              <line x1="237" y1="85" x2="237" y2="155" stroke="#ff4444" stroke-width="7" stroke-linecap="round"/>
+              <path d="M312,92 Q327,86 332,102 Q336,118 324,122" fill="none" stroke="#ff4444" stroke-width="5"/>
+              <rect width="480" height="240" fill="rgba(0,0,0,0.45)"/>
+              <circle cx="240" cy="120" r="38" fill="rgba(255,0,0,0.85)"/>
+              <polygon points="229,104 229,136 260,120" fill="white"/>
+            </svg>
+            <div class="video-duration">31:15</div>
+          </a>
+          <div class="video-info">
+            <h4>Trek vs Giant vs Specialized — кто лучше в 2025?</h4>
+            <span>Большое сравнение шоссейных велосипедов топ-брендов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">BIKE<span>NOTES</span></a>
+        <p>Независимый журнал о велосипедах и велоспорте. Пишем честно — катаем сами.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Разделы</h5>
+        <ul>
+          <li><a href="reviews.html">Обзоры</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="tips.html">Советы</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>О сайте</h5>
+        <ul>
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 BikeNotes.ru — Всё о велосипедах</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
